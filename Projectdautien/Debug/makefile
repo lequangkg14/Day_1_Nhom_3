@@ -69,8 +69,8 @@ all: main-build
 main-build: Projectdautien.elf secondary-outputs
 
 # Tool invocations
-Projectdautien.elf Projectdautien.map: $(OBJS) $(USER_OBJS) D:\STM32\Projectdautien\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Projectdautien.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\STM32\Projectdautien\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projectdautien.map" -Wl,--gc-sections -static -L"D:\STM32\SDK_1.0.3_NUCLEO-F401RE\lib_stm" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Projectdautien.elf Projectdautien.map: $(OBJS) $(USER_OBJS) D:\STM32\Day1_Nhom3\Projectdautien\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Projectdautien.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\STM32\Day1_Nhom3\Projectdautien\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Projectdautien.map" -Wl,--gc-sections -static -L"D:\STM32\SDK_1.0.3_NUCLEO-F401RE\lib_stm" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

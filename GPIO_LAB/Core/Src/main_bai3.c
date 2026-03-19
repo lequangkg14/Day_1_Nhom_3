@@ -1,3 +1,16 @@
+/*******************************************************************************
+ *
+ * Description: Lab2 - Bai 2
+ * Project name:
+ *
+ *
+ * Last Changed By:  $Author: TrungNT $
+ * Revision:         $Revision: 1.0 $
+ * Last Changed:     $Date: 24/9/2021 $
+ *
+ ******************************************************************************/
+/**Libraries******************************************************************/
+
 #include <stdint.h>
 #include <stm32f401re_gpio.h>
 #include <stm32f401re_rcc.h>
